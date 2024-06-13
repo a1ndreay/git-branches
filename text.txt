@@ -2,3 +2,4 @@ simple file with string of text
 first commit for new branch
 third string of file.txt
 fourth line of text.txt
+five string of text.txt
