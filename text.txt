@@ -1,4 +1,6 @@
-simple file шwith string of text
+OLD INFORMATION
+---
+simple file with string of text
 new line of text
 first commit for new branch
 third string of file.txt
