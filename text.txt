@@ -6,3 +6,5 @@ fourth line of text.txt
 five string of text.txt
 
 New Actual information
+---
+1. The first line of information
