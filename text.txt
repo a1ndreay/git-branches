@@ -1,1 +1,2 @@
 simple file with string of text
+new line of text
