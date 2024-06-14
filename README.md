@@ -1,5 +1,9 @@
 # Test branches project
 ---
+<a href="https://t.me/a1ndreay">
+  <img src="https://icon-icons.com/icons2/2108/PNG/512/telegram_icon_130816.png" alt="Telegram" width="50" height="50">
+</a>
+
 ### Simple project for testing __git__ branches
 
 ### Используйте `git diff <Назввание 1 ветки> <Название 2 ветки>` для сравнения веток
