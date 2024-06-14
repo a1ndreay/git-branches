@@ -33,6 +33,9 @@ $ git merge main # влили main в новую ветку my-branch
 $ git push -u origin my-branch # отправили ветку my-branch в удалённый репозиторий
 ```
 
+## Стягивание изменений
+#### Изменения из удалённого репозитория стягиваются с помощью `git pull`
+
 > [!Tip]
 > Simple line of text
 ✍️ *Author: Andrey*
