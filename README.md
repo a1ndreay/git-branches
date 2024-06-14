@@ -33,6 +33,5 @@ $ git merge main # влили main в новую ветку my-branch
 $ git push -u origin my-branch # отправили ветку my-branch в удалённый репозиторий
 ```
 
-> [!Tip]
-> Simple line of text
+
 ✍️ *Author: Andrey*
