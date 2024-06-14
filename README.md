@@ -25,4 +25,4 @@
 
 > [!Tip]
 > Simple line of text
-i*Author: Andrey*
+✍️ *Author: Andrey*
