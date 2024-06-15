@@ -79,4 +79,9 @@ $ git push -u origin my-branch # отправили ветку my-branch в уд
 <img src="https://pictures.s3.yandex.net:443/resources/M4_T2_02203_1689343586.png" alt="" crossorigin="anonymous" class="image image_expandable">
 
 #### *При слиянии не `fast-forward` веток будет создан коммит слияния* __merge commit__, слияние либо будет проведено автоматически, либо попросит ручного слияния
+
+> [!TIP]
+> Чаще всего сообщения к коммитам слияния не редактируют и оставляют «как предложил Git». Для таких случаев удобен флаг `--no-edit: git merge --no-edit <Название_ветки>`.
+
+
 ✍️ *Author: Andrey*
