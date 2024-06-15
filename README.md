@@ -56,6 +56,7 @@ $ git push -u origin my-branch # отправили ветку my-branch в уд
 #### Если при слиянии главная ветка может без конфликтов достичь состояния сливаемой ветки, то применимо слияние `fast-forward`, при таком слиянии исходная ветка будет дополнена коммитами сливаемой ветки, как будто этой ветки и не было.
 ### Изобразим ветки `main` и `add-docs` схематически:
 <img src="https://pictures.s3.yandex.net:443/resources/M4_T2_01_1689342594.png" alt="" crossorigin="anonymous" class="image image_expandable">
+
 ### При таком слиянии, ветку `main` можно довести до состояния ветки `add-docs` дополнив двумя коммитами:
 <img src="https://pictures.s3.yandex.net:443/resources/M4_T2_02_1689342662.png" alt="" crossorigin="anonymous" class="image image_expandable">
 > [!WARNING]
