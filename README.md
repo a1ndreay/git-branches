@@ -52,4 +52,22 @@ $ git push -u origin my-branch # отправили ветку my-branch в уд
 ## Стягивание изменений:
 #### Изменения из удалённого репозитория стягиваются с помощью `git pull`
 
+## FAST-FORWARD
+#### Если при слиянии главная ветка может без конфликтов достичь состояния сливаемой ветки, то применимо слияние `fast-forward`, при таком слиянии исходная ветка будет дополнена коммитами сливаемой ветки, как будто этой ветки и не было.
+### Изобразим ветки `main` и `add-docs` схематически:
+<img src="https://pictures.s3.yandex.net:443/resources/M4_T2_01_1689342594.png" alt="" crossorigin="anonymous" class="image image_expandable">
+### При таком слиянии, ветку `main` можно довести до состояния ветки `add-docs` дополнив двумя коммитами:
+<img src="https://pictures.s3.yandex.net:443/resources/M4_T2_02_1689342662.png" alt="" crossorigin="anonymous" class="image image_expandable">
+> [!WARNING]
+> При таком слиянии ветка `add-docs` просто совмещается с веткой `main` как будто её и не было.
+
+## MERGE COMMIT
+#### Слияние `fast-forward` можно отключить, добавив следующий флаг: `git merge --no-ff <Название_ветки>`, в таком случае в ветке `main` будет создан дополнительный коммит слияния: 
+<img src="https://pictures.s3.yandex.net:443/resources/M4_T2_03_1689342784.png" alt="" crossorigin="anonymous" class="image image_expandable">
+#### *При таком слиянии будет создан соответствующий коммит:*
+```bash
+*   6814789 (HEAD -> main) Merge branch 'add-docs'
+```
+> [!TIP]
+> Многие проекты отключают __fast-forward__ слияние веток, потому что при нём теряется часть информации. Результат выглядит так, как будто в `main` «просто появились» новые коммиты. Если не знать о ветке `add-docs`, то можно подумать, что такой ветки и не было.
 ✍️ *Author: Andrey*
