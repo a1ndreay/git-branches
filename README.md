@@ -83,5 +83,30 @@ $ git push -u origin my-branch # отправили ветку my-branch в уд
 > [!TIP]
 > Чаще всего сообщения к коммитам слияния не редактируют и оставляют «как предложил Git». Для таких случаев удобен флаг `--no-edit: git merge --no-edit <Название_ветки>`.
 
+## GIT PUSH
+#### При выталкивании изменений на сервер может произойти такая же ошибка, что ветка на сервере была изменена, и локальная отстаёт о неё, в таком случае произоёдёт ошибка:
+```bash
+# текущая ветка — main
+$ git push
+To github.com:username/repository.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:username/repository.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+#### Обойти эту ошибку так же можно с помощью `rebase`:
+<img src="https://pictures.s3.yandex.net:443/resources/M4_T2_04202_1689675621.png" alt="" crossorigin="anonymous" class="image image_expandable">
+
+#### Или с помощью __git push --force__, рассмотрим слудующую ситуацию:
+<img src="https://pictures.s3.yandex.net:443/resources/M4_T2_03201_1689593400.png" alt="" crossorigin="anonymous" class="image image_expandable">
+
+#### *Из-за коммита D ветки находятся в состоянии non-fast-forward* В этом случае команда `git push --force` просто «выкинет» (удалит) коммит `D` и запишет в `main@origin` коммиты из `main`. Вот что получится:
+<img src="https://pictures.s3.yandex.net:443/resources/M4_T2_00_1689593419.png" alt="" crossorigin="anonymous" class="image image_expandable">
+
+> [!TIP]
+> В очень редких случаях это уместная команда. Например, если кто-то нечаянно «сломал» ветку main@origin, можно найти копию репозитория, в которой ветка main не «сломана», и использовать git push --force для восстановления ветки в origin.
+
 
 ✍️ *Author: Andrey*
