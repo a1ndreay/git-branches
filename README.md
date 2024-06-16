@@ -122,5 +122,10 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 1. Не будет проблемы «расхождения» веток, ведь новые изменения попадают в __main__ через `git merge`, а не через `git push`. Команду merge «разошедшиеся» ветки не смущают, ведь для них она и придумана.
 2. В ветке main всегда рабочая версия проекта.
 
+# Pull-request aka Merge-request aka PR and MR
+---
+### Данные методы наследуются от подхода  __Feature branch workflow__, обеспечивают, что в __main__ код будет попадать через merge коммиты, которые github делает автоматически:
+<video class="video-gif" controls="" playsinline=""><source src="https://code.s3.yandex.net/BasicsOfGit/workWithPR_practice/1_create_pr_directly.mp4" type="video/mp4"></video>
+
 
 ✍️ *Author: Andrey*
