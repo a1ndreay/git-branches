@@ -127,5 +127,16 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ### Данные методы наследуются от подхода  __Feature branch workflow__, обеспечивают, что в __main__ код будет попадать через merge коммиты, которые github делает автоматически:
 <video src="https://code.s3.yandex.net/BasicsOfGit/workWithPR_practice/1_create_pr_directly.mp4" type="video/mp4"></video>
 
+# Проблемы при Pull-request
+---
+### Случай: в момент времени __t1__ вы сделали `git checkout -b feature/my-new-awesome-code`, в тот же момент времени __t1__ ваш коллега сделал `git checkout -b feature/other-colleague-code`, в момент времени __t2__ ветка вашего коолеги `feature/other-colleague-code` была влита в ветку `main`:
+<img src="https://pictures.s3.yandex.net:443/resources/M4_T4_02201_1689627442.png" alt="" crossorigin="anonymous" class="image image_expandable" style="">
+
+
+### В таком случае ваша удалённые ветка `feature/my-new-awesome-code` и `main`  считаются `non-fast-forward` из-за коммита слияния __t2__. При таком условии GitHub не позволит продолжать Pull-request пока ваш код содержит неразрешимые конфликты. Перейдите локально в главную ветку `git checkout [main|master]` обновите ветку до актуального состояния `git pull`, теперь локально перейдите в вашу ветку `git checkout feature/my-new-awesome-code` выполните слияние с ветокой `main` с целью обновления вашего кода и устранения конфликтов локально `git merge main` и оттправле изменения на github `git push`. Теперь новый коммит с актуальной версией добавится к вашему __Pull-request__ и вы сможете выполнить автоматическое слияние с __main__:
+
+<img src="https://pictures.s3.yandex.net:443/resources/M4_T4_06-2_1689627557.png" alt="" crossorigin="anonymous" class="image image_expandable">
+
+
 
 ✍️ *Author: Andrey*
