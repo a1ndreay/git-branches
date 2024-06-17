@@ -127,7 +127,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ### Данные методы наследуются от подхода  __Feature branch workflow__, обеспечивают, что в __main__ код будет попадать через merge коммиты, которые github делает автоматически:
 <video src="https://code.s3.yandex.net/BasicsOfGit/workWithPR_practice/1_create_pr_directly.mp4" type="video/mp4">
 
-# __Mergetool__
+
+# Mergetool
 ---
 ### При конфликте слияния можно использовать `git mergetool` который создаст копию файла с маркерами изменений, либо воспользоваться VS Code
 
