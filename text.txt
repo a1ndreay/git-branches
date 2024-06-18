@@ -10,4 +10,5 @@ five string of text.txt
 New Actual information
 ---
 1. The first line of information
-2. The second line of information
+2. The second string
+3. The second line of informatioin
