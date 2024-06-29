@@ -25,6 +25,16 @@
 ## Клонирование удалённого репозитория:
 #### Удалённый репозиторий клонируется на локальный компьютер при помощи `git clone git@github.com:%ИМЯ_АККАУНТА%/%ИМЯ_РЕПОЗИТОРИЯ%.git`
 
+## Изменения удалённого репозитория
+```bash
+$ git remote show
+$ git remote get-url origin
+http://gitea.praktikum-services.ru/00_student/sausage-store.git
+$ git remote set-url origin git@gitlab.praktikum-services.ru:00_student/sausage-store.git
+$ git remote get-url origin
+git@gitlab.praktikum-services.ru:00_student/sausage-store.git
+```
+
 
 ## Связывание локального и удалённого репозитория:
 #### Чтобы связать локальный и удалённый репозитории `git remote add origin git@github.com:%ИМЯ_АККАУНТА%/%ИМЯ_РЕПОЗИТОРИЯ%.git`
