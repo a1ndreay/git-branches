@@ -153,6 +153,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 <img src="https://pictures.s3.yandex.net:443/resources/M4_T4_06-2_1689627557.png" alt="" crossorigin="anonymous" class="image image_expandable">  
 
-
+## Просмотр патчей коммитов
+---
+#### Каждый коммит вносит в код ряд изменений называемых патчем `git log -p [-2]` флаг __-p__ говорит вывести патчи, влаг __-2__ говорит вывести только 2 последних коммита 
 
 ✍️ *Author: Andrey*
