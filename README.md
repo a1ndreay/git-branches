@@ -157,4 +157,9 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ---
 #### Каждый коммит вносит в код ряд изменений называемых патчем `git log -p [-2]` флаг __-p__ говорит вывести патчи, влаг __-2__ говорит вывести только 2 последних коммита 
 
+## Просмотр статистики 
+---
+#### Для удобного просмтра статистики про проделананной работе `git log --since=1.weeks --oneline --stat`
+[image.png](https://postimg.cc/LgP9HwJt) 
+
 ✍️ *Author: Andrey*
