@@ -162,4 +162,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 #### Для удобного просмтра статистики про проделананной работе `git log --since=1.weeks --oneline --stat`
 [image.png](https://postimg.cc/LgP9HwJt) 
 
+#### Изменение индекса в интерактивном режиме `git add -i` 
+#### Просмотр индексированных файлов `git diff --cached`
+
 ✍️ *Author: Andrey*
