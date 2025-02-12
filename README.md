@@ -4,6 +4,8 @@
   <img src="https://icon-icons.com/icons2/2108/PNG/512/telegram_icon_130816.png" alt="Telegram" width="25" height="25">
 </a>
 
+## Хороший гайд по Git: [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/rewriting-history)
+
 ### Simple project for testing __git__ branches
 
 ### Используйте `git diff <Назввание 1 ветки> <Название 2 ветки>` для сравнения веток
